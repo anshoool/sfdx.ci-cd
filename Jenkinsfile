@@ -18,10 +18,6 @@ node {
     // Check out code from source control.
     // -------------------------------------------------------------------------
 
-    stage('checkout source') {
-        checkout scm
-    }
-
 
     // -------------------------------------------------------------------------
     // Run all the enclosed stages with access to the Salesforce
@@ -35,6 +31,10 @@ node {
             // -------------------------------------------------------------------------
             // Authorize the Dev Hub org with JWT key and give it an alias.
             // -------------------------------------------------------------------------
+            
+            stage('checkout source') {
+                checkout scm
+            }
 
             stage('Authorize DevHub') {
                 rc = command "sfdx auth:jwt:grant --instanceurl ${SF_INSTANCE_URL} --clientid ${SF_CONSUMER_KEY} --username ${SF_USERNAME} --jwtkeyfile ${server_key_file} --setdefaultdevhubusername --setalias HubOrg"
