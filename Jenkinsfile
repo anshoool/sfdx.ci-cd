@@ -12,7 +12,7 @@ node {
     def PACKAGE_VERSION
     def SF_INSTANCE_URL = env.SF_INSTANCE_URL ?: "https://login.salesforce.com"
     def server_key_file = "/home/jenkins/server.key"
-    def jenkins = /home/jenkins/sfdx/bin
+    def jenkins = "/home/jenkins/sfdx/bin"
 
 
 
