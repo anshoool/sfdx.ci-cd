@@ -86,12 +86,12 @@ node {
             // Run unit tests in test scratch org.
             // -------------------------------------------------------------------------
 
-            stage('Run Tests In Test Scratch Org') {
-                rc = command "${jenkins}/sfdx force:apex:test:run --targetusername ciorg --wait 10 --resultformat tap --codecoverage --testlevel ${TEST_LEVEL}"
-                if (rc != 0) {
-                    error 'Salesforce unit test run in test scratch org failed.'
-                }
-            }
+            //stage('Run Tests In Test Scratch Org') {
+            //    rc = command "${jenkins}/sfdx force:apex:test:run --targetusername ciorg --wait 10 --resultformat tap --codecoverage --testlevel ${TEST_LEVEL}"
+            //    if (rc != 0) {
+            //        error 'Salesforce unit test run in test scratch org failed.'
+            //    }
+            //}
 
 
             // -------------------------------------------------------------------------
