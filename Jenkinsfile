@@ -74,12 +74,12 @@ node {
             // Push source to test scratch org.
             // -------------------------------------------------------------------------
 
-            stage('Push To Test Scratch Org') {
-                rc = command "${jenkins}/sfdx force:source:push --targetusername ciorg"
-                if (rc != 0) {
-                    error 'Salesforce push to test scratch org failed.'
-                }
-            }
+            //stage('Push To Test Scratch Org') {
+            //    rc = command "${jenkins}/sfdx force:source:push --targetusername ciorg"
+            //    if (rc != 0) {
+            //        error 'Salesforce push to test scratch org failed.'
+            //    }
+            //}
 
 
             // -------------------------------------------------------------------------
