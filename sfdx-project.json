@@ -2,11 +2,17 @@
   "packageDirectories": [
     {
       "path": "force-app",
-      "default": true
+      "default": true,
+      "package": "myPkgAlias",
+      "versionName": "1.0.0",
+      "versionNumber": "1.0.0.NEXT",
     }
   ],
   "name": "MyPersonalDevOrg",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "52.0"
+  "sourceApiVersion": "52.0",
+  "packageAliases": {
+  "myPkgAlias": "0Ho000000000000001"
+    }
 }
