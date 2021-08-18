@@ -7,14 +7,6 @@
      exclude:
      - README.md
      - azure-pipelines.yml
-   pr:
-     autoCancel: "true"
-     branches:
-     include:
-     - master
-     paths:
-     exclude:
-     - README.md
  jobs:
  - job: Deploy
    condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
