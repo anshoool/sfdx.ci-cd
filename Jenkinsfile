@@ -63,7 +63,7 @@ node {
             // -------------------------------------------------------------------------
 
             stage('Run validation on source code') {
-                rc = command "${jenkins}/sfdx force:mdapi:deploy -l RunLocalTests -c -d ./toDeploy -u devOrg -w 10"
+                rc = command "${jenkins}/sfdx force:mdapi:deploy -l RunLocalTests -c -d ./toDeploy -u anshoool@techcoopers.com -w 10"
                 if (rc != 0) {
                     error 'Salesforce test scratch org display failed.'
                 }
@@ -99,7 +99,7 @@ node {
             // -------------------------------------------------------------------------
 
             stage('Deploy source code to Dev Org') {
-                rc = command "${jenkins}/sfdx force:mdapi:deploy -l RunLocalTests -d ./toDeploy -u devOrg -w 10"
+                rc = command "${jenkins}/sfdx force:mdapi:deploy -l RunLocalTests -d ./toDeploy -u anshoool@techcoopers.com -w 10"
                 if (rc != 0) {
                     error 'Salesforce test scratch org deletion failed.'
                 }
