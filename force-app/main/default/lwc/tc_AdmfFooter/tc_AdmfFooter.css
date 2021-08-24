@@ -1,0 +1,13 @@
+* {
+  background: #f4f6f9;
+}
+.admf-defalutGray-text,
+.admf-footer ul li a {
+  color: #969492 !important;
+}
+.admf-utilityGray-text {
+  color: #b0adab;
+}
+.admf-primaryBrand-text {
+  color: #0f78d5;
+}

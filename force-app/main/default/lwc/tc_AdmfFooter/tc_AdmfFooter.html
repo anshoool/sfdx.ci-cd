@@ -1,0 +1,44 @@
+<template>
+  <template if:true={showFooterCmp}>
+    <div class="slds-clearfix slds-p-horizontal_x-large slds-p-vertical_medium">
+      <!-- FOOTER LEFT -->
+      <div class="slds-float_left admf-footer">
+        <p class="slds-m-top_x-large slds-text-title admf-utilityGray-text">
+          {label.TC_AR177_BottomText_Footer}
+        </p>
+      </div>
+      <!-- / FOOTER LEFT  -->
+      <!-- FOOTER RIGHT  -->
+      <div class="slds-float_right">
+        <div class="slds-media slds-media_center slds-float_right">
+          <div class="slds-media__figure">
+            <span class="slds-icon_container">
+              <c-tc_-svg-icon
+                icon="questions_and_answers"
+                namespace="utility-sprite"
+                iconclass="slds-icon-text-default slds-icon_large admf-primaryBrand-fill"
+                spanclass=""
+              ></c-tc_-svg-icon>
+              <span class="slds-assistive-text"
+                >{label.TC_AR177_DescriptionIcon_Footer}</span
+              >
+            </span>
+          </div>
+          <div class="slds-no-flex">
+            <h3 class="slds-text-title_caps admf-defalutGray-text">
+              {label.TC_AR177_Support_Footer}
+            </h3>
+            <a
+              href="mailto:adminified@selectiva.com"
+              class="slds-text-link_reset"
+              ><span class="slds-text-heading_small admf-primaryBrand-text"
+                >adminified@selectiva.com</span
+              ></a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- / FOOTER RIGHT  -->
+    </div>
+  </template>
+</template>
